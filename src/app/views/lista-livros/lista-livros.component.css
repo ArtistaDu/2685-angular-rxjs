@@ -47,6 +47,8 @@ section p {
   color: #8B8B8B;
 }
 
+
+
 .resultados {
   display: flex;
   justify-content: center;
@@ -63,17 +65,25 @@ section p {
   color: #6C63FF;
 }
 
-input[type='search']:focus {
+input[type='search']:focus, input[type='search']:valid {
   background-image: none;
   outline: none;
   text-decoration: none;
   padding-left: 10px;
 }
 
+/* input:valid {
+  background-image: none;
+} */
+
 input[type="search"]::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
 ::-webkit-search-results-decoration { display: none; }
+
+/* input:not([value=""]) {
+  background-image: none;
+} */
 
 section button {
   border: none;
@@ -82,7 +92,6 @@ section button {
   position: relative;
   top: 0.3rem;
   right: 50px;
-  cursor: pointer;
 }
 
 .busca {
